@@ -11,7 +11,7 @@ It is inherited from [jetbrains/upsource](https://hub.docker.com/r/jetbrains/ups
 
 For building the image you need to perform the following:
 
-1. Choose [version](https://hub.docker.com/r/jetbrains/upsource-psi-agent/tags/) of base `jetbrains/upsource`
+1. Choose [version](https://hub.docker.com/r/jetbrains/upsource/tags/) of base `jetbrains/upsource`
 (referred to as `<version>` below)
 
 2. `docker pull jetbrains/upsource:<version>`
