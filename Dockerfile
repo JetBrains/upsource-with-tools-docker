@@ -19,7 +19,7 @@ RUN mkdir ${ANDROID_HOME} && \
     unzip -q android-sdk-tools.zip -d ${ANDROID_HOME} && \
     rm -f android-sdk-tools.zip && \
     mkdir -p ${ANDROID_HOME}/licenses
-COPY ./licenses/*  ${ANDROID_HOME}/licenses/
+COPY ./android-licenses/*  ${ANDROID_HOME}/licenses/
 RUN ${ANDROID_HOME}/tools/bin/sdkmanager "platform-tools" && \
 # Repeat two lines below for each SDK supported in your projects
     ${ANDROID_HOME}/tools/bin/sdkmanager "platforms;android-26" && \
