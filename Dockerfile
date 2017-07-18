@@ -23,6 +23,6 @@ COPY ./android-licenses/*  ${ANDROID_HOME}/licenses/
 RUN ${ANDROID_HOME}/tools/bin/sdkmanager "platform-tools" && \
 # Repeat two lines below for each SDK supported in your projects
     ${ANDROID_HOME}/tools/bin/sdkmanager "platforms;android-26" && \
-    ${ANDROID_HOME}/tools/bin/sdkmanager "build-tools;26.0.0" && \
+    ${ANDROID_HOME}/tools/bin/sdkmanager "build-tools;26.0.0"
 
 USER jetbrains
