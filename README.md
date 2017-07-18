@@ -19,10 +19,10 @@ For building the image you need to perform the following:
 
 3. Replace `@VERSION@` in Dockerfile with the `<version>` of [jetbrains/upsource](https://hub.docker.com/r/jetbrains/upsource/) base image you have chosen.
 
-4. If Android projects will be added to your Upsource instance:
-   - Copy under android-licenses folder all the files from $ANDROID_HOME/licenses folder located on your developer machine.
-   - Add installation lines in Dockerfile for every Android SDK platform and build tools supported in you projects.
-   
+4. For Upsource instance hosting Android projects, Android SDK might be installed. For that:
+- copy all the files from $ANDROID_HOME/licenses folder located on your developer machine to the folder android-licenses of docker build context (see details on Android SDK licensing scheme: <link-to-the Android site>).
+- add installation lines in Dockerfile for every Android SDK platform and build tools supported in you projects (Android 2.6 is added as an example there)
+  
    OR remove all Android related lines from Dockerfile if your projects have nothing to do with Android.
 
 5. Run the docker build command:
