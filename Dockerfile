@@ -2,7 +2,7 @@ FROM jetbrains/upsource:@VERSION@
 
 USER root
 
-RUN apt-get update && apt-get install apt-transport-https && \
+RUN apt-get update && apt-get install -y apt-transport-https && \
 # install python
     apt-get install -y python-pip && \
     apt-get install -y python3 && apt-get install -y python3-pip && \
@@ -11,11 +11,11 @@ RUN apt-get update && apt-get install apt-transport-https && \
 # install yarn    
     curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | apt-key add - && \
     echo "deb https://dl.yarnpkg.com/debian/ stable main" | tee /etc/apt/sources.list.d/yarn.list && \
-    apt-get update && apt-get install yarn && \    
+    apt-get update && apt-get install -y yarn && \
 # install nodejs   
     curl -sL https://deb.nodesource.com/setup_6.x | bash - && \
     apt-get install nodejs
-    
+
 # install Android tools
 ENV ANDROID_HOME=/opt/android-sdk-linux
 ENV PATH=${PATH}:${ANDROID_HOME}/tools:${ANDROID_HOME}/tools/bin:${ANDROID_HOME}/platform-tools
