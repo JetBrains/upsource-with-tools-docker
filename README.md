@@ -1,3 +1,4 @@
+[![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 # Upsource with tools
 
 This project contains a sample Dockerfile that declares an extended Upsource docker image with additional tools used for source code processing.
