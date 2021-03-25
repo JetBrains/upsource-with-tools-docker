@@ -4,7 +4,7 @@
 This project contains a sample Dockerfile that declares an extended Upsource docker image with additional tools used for source code processing.
 
 It is inherited from [jetbrains/upsource](https://hub.docker.com/r/jetbrains/upsource/) and contains the following tools:
-- Node.js (latest LTS v12.x), 
+- Node.js (latest LTS v14.x), 
 - Yarn (latest stable)
 - PHP (latest stable)
 - Python 2.7.9 (part of the `openjdk:8` base image) 
